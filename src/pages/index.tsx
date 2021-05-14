@@ -1,4 +1,4 @@
-import { Flex, Button, Stack, Text, Box } from '@chakra-ui/react'
+import { Flex, Button, Stack, Text } from '@chakra-ui/react'
 import { Input } from '../components/form/input'
 
 export default function SignIn() {
