@@ -1,63 +1,48 @@
-import { Flex, Input, Button, Stack, FormLabel, FormControl } from '@chakra-ui/react'
+import { Flex, Button, Stack, Text, Box } from '@chakra-ui/react'
+import { Input } from '../components/form/input'
 
-export default function Home() {
+export default function SignIn() {
   return (
-     <Flex 
-      w="100vw" 
-      h="100vh" 
-      align="center" 
+
+     <Flex
+      w="100vw"
+      h="100vh"
+      align="center"
       justify="center"
     >
-      <Flex 
+
+      <Flex
        as="form"
        w="100%"
        maxWidth={360}
        bg="gray.800"
-       p="8"
+       pt="10"
+       pb="8"
+       pr="8"
+       pl="8"
        borderRadius={8}
        flexDir="column"
       >
         <Stack spacing="4">
-        <div>
-          <FormLabel htmlFor="email">E-mail</FormLabel>
+          <Text
+            mb="8"
+            fontSize="3xl"
+            fontWeight="bold"
+            justify="top"
+            align="center"
+            >
+             DashApp
 
-            <Input 
-              name="email" 
-              type="email" 
-              id="email"
-              focusBorderColor="pink.500"
-              bgColor="gray.900"
-              variant="field"
-              _hover={{
-                bgColor: 'gray.900'
-              }}
-              size="lg"
-            />
-        </div>
+            <Text as="span" ml="1" color="pink.500">.</Text>
+          </Text>
 
-        <div>    
-          <FormLabel htmlFor="password">Password</FormLabel>
-
- 
-            <Input 
-              name="password" 
-              type="password"
-              id="password"
-              focusBorderColor="pink.500"
-              bgColor="gray.900"
-              variant="field"
-              _hover={{
-                bgColor: 'gray.900'
-              }}
-              size="lg"
-            />
-        </div> 
-
+          <Input name="email" type="email" label="E-mail" />
+          <Input name="password" type="password" label="Senha" />
         </Stack>
 
-        <Button 
-          type="submit" 
-          mt="6" 
+        <Button
+          type="submit"
+          mt="6"
           colorScheme="pink" size="lg">Entrar</Button>
       </Flex>
      </Flex>
