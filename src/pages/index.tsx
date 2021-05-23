@@ -43,6 +43,7 @@ export default function SignIn() {
         <Button
           type="submit"
           mt="6"
+          href="/dashboard"
           colorScheme="pink" size="lg">Entrar</Button>
       </Flex>
      </Flex>
